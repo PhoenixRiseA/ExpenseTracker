@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <body>
+        <div class ="container my-3">
+            <h1>Expense Tracker</h1>    
+            <div>
+                <form onsubmit="saveToLocalStorage(event)">
+                    <label>Choose expense amount:</label>
+                    <input id = "amount"type="text" name="amount" required/>
+                    <label>Description:</label>
+                    <input id="description" type="text" name = "text" required />
+                    <label for="category">Choose a category:</label>
+                    
+                    <select id="typeOfExpense" name="typeOfExpense">
+                        <option value="movie">movie</option>
+                        <option value="food">food</option>
+                        <option value="fuel">fuel</option>
+                        <option value="groceries">groceries</option>
+                        <option value="hobbies">hobbies</option>
+                    </select>
+                    <button  id = "addBtn" > Add Expense <button/>
+                </form>
+            </div>
+            <ul id='listOfExpenses'>
+
+            </ul>
+            
+        </div>        
+                   
+        <script src = "expenseTracker.js"> </script>
+    </body>
+</html>
