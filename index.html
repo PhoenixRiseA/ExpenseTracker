@@ -5,7 +5,7 @@
         <div class ="container my-3">
             <h1>Expense Tracker</h1>    
             <div>
-                <form onsubmit="saveToLocalStorage(event)">
+                <form onsubmit="saveToCloud(event)">
                     <label>Choose expense amount:</label>
                     <input id = "amount"type="text" name="amount" required/>
                     <label>Description:</label>
@@ -27,7 +27,7 @@
             </ul>
             
         </div>        
-                   
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>          
         <script src = "expenseTracker.js"> </script>
     </body>
 </html>
